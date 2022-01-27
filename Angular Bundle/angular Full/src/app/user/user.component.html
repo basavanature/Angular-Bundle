@@ -1,0 +1,16 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Sports</th>
+            <th scope="col">Id</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let u of results">
+            <td>{{u.name}}</td>
+            <td>{{u.sports}}</td>
+            <td>{{u.id}}</td>
+        </tr>
+    </tbody>
+</table>

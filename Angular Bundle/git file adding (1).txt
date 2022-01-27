@@ -1,0 +1,13 @@
+how to add files/folders  in git
+
+git init
+git add filename.extension
+git add foldername
+git add .     this will add all the files/folders which are present
+git status
+git commit -m "1st commit"
+git remote add origin <git repo url>
+git remote add origin https://github.com/githubcharan/Angular-codes-TE.git
+git push origin master
+
+

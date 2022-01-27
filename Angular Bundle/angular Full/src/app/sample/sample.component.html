@@ -1,0 +1,83 @@
+---style binding---
+<h1 [style.color]="color">This is sample component</h1>
+-----proprty binding----
+<input [type]="text">
+
+
+<h1 [class]="demo">this is class binding</h1>
+---attribute ----s
+
+
+<table [border]="number">
+    <tr>
+        <th>
+            Heading
+        </th>
+    </tr>
+    <tr>
+        <td>
+            Data
+        </td>
+    </tr>
+</table>
+<ng-content class="para"></ng-content>
+<button (click)="onclick()">click Me!</button>
+
+<hr>
+<h1>{{1+2}}</h1>
+<h1>{{number}}</h1>
+<h1>{{send4()}}</h1>
+<hr>
+
+--ng Model---
+<input [(ngModel)]="value">
+<h2>{{value}}</h2>
+<hr>
+<h1>{{dataFromParent}}</h1>
+<h1>{{onemoredata}}</h1>
+
+
+<hr>
+---
+<button (click)="addNewItem(newItem)">Add to parent's list</button>
+<hr>
+----ngIf-----
+<button (click)="toggle()">switchOnOff</button>
+<h1 *ngIf="flag">Hello</h1>
+<hr>
+---ngFor-----
+1) table formate
+2)unordered or ordered list
+<table border="5px">
+    <tr>
+        <th>Name</th>
+        <th>Place</th>
+
+    </tr>
+    <tr *ngFor="let a of elementArray">
+        <td>{{a.name}}</td>
+        <td>{{a.place}}</td>
+    </tr>
+
+</table>
+
+<hr>
+
+<ul>
+    <li *ngFor="let b of elementArray">{{b.name}} {{b.place}} </li>
+</ul>
+<hr>
+--ngSwitch----
+<input type="text" [(ngModel)]="planet">
+<ul [ngSwitch]="planet">
+    <li *ngSwitchCase="'Mars'">Mars</li>
+    <li *ngSwitchCase="'Jupitar'">Jupitar</li>
+    <li *ngSwitchCase="'Pluto'">Pluto</li>
+    <li *ngSwitchDefault> Please enter a planet! </li>
+</ul>
+<hr> 
+
+<ng-content></ng-content>
+<hr>
+---Servies---
+---Routing-----

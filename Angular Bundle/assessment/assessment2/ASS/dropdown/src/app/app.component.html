@@ -1,0 +1,16 @@
+<div class="container">
+  <h3>Select Your City</h3>
+  <select class="custom-select" [(ngModel)]="city" (click)="selectCity()">
+    <option selected disabled>Open this select menu</option>
+    <option value="Bengaluru">Bengaluru</option>
+    <option value="Hyderabad">Hyderabad</option>
+    <option value="Amaravati">Amravati</option>
+    <option value="Amritsar">Amritsar</option>
+    <option value="Chennai">Chennai</option>
+  </select>
+  <h3>
+    {{city +' City Selected!!'}}
+  </h3>
+</div>
+<app-odissa></app-odissa>
+
